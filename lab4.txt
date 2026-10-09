@@ -1,1 +1,6 @@
 Answer written questions here:
+1. Rendering first frame will take very long if we start from a big iteration count number, since for every frame the program need to run mandelbrotSmooth() for each pixel.
+
+2. Since the rendering of each pixel doesn't depend on other pixels, we can use multiple computer to run for different areas of the image and then combine their results into the final one.
+
+3. From visual perspective, the image will be more smooth and reduce the speckled noise, but from performance perspective, it will require more rendering time since we now run more Mandelbrot calculations.
